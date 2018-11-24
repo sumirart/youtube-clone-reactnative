@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { withNavigation } from 'react-navigation';
 
-export default NavBar = () => (
-    <View style={styles.navbar}>
-        <Image source={require("../src/logo.png")} style={{ width: 90, height: 20 }} />
 
-        <View style={styles.rightNav}>
-        <TouchableOpacity>
-            <Icon style={styles.navItems} name="videocam" size={25} />
-        </TouchableOpacity>
+class NavBar extends Component{
+    render(){
+        return(
+            <View style={styles.navbar}>
+                <Image source={require("../src/logo.png")} style={{ width: 90, height: 20 }} />
 
-        <TouchableOpacity>
-            <Icon style={styles.navItems} name="search" size={25} />
-        </TouchableOpacity>
+                <View style={styles.rightNav}>
+                    <TouchableOpacity>
+                        <Icon style={styles.navItems} name="videocam" size={25} />
+                    </TouchableOpacity>
 
-        <TouchableOpacity>
-            <Image source={require('../src/photo.jpg')} style={styles.photo}/>
-        </TouchableOpacity>
-        </View>
-    </View>
-)
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Search')}>
+                        <Icon style={styles.navItems} name="search" size={25} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Profile')}>
+                        <Image source={require('../src/photo.jpg')} style={styles.photo} />
+                    </TouchableOpacity>
+                </View>
+            </View>
+        )
+    }
+}
+
+export default withNavigation(NavBar);
 
 const styles = StyleSheet.create({
     // NAVBAR ---------------------

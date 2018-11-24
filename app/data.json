@@ -169,64 +169,6 @@
         },
         {
             "kind": "youtube#video",
-            "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/H0GDitnJcn2q2qv9nq1K3NI0flM\"",
-            "id": "EBt_88nxG4c",
-            "snippet": {
-                "publishedAt": "2017-11-21T14:00:02.000Z",
-                "channelId": "UCXJDX1KK6t121Z9FLhu5o2A",
-                "title": "P!nk - Beautiful Trauma (Official Video)",
-                "description": "P!NK's new album 'Beautiful Trauma' featuring the singles “What About Us” and \"Beautiful Trauma\" is available now!\niTunes - http://smarturl.it/BeautifulTrauma/itunes?IQid=yt \nApple Music - http://smarturl.it/BeautifulTrauma/applemusic?IQid=yt \nSpotify - http://smarturl.it/BeautifulTrauma/spotify?IQid=yt \nAmazon - http://smarturl.it/BeautifulTrauma/amazon?IQid=yt \nGoogle Play - http://smarturl.it/BeautifulTrauma/googleplay?IQid=yt\n \nWatch the Official Video for “What About Us” - http://smarturl.it/WAU?IQid=yt\n \nConnect with P!NK:\nhttp://www.facebook.com/pink\nhttp://www.twitter.com/pink\nhttp://www.instagram.com/pink\nhttp://www.pinkspage.com",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/EBt_88nxG4c/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/EBt_88nxG4c/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/EBt_88nxG4c/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/EBt_88nxG4c/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/EBt_88nxG4c/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
-                    }
-                },
-                "channelTitle": "PinkVEVO",
-                "tags": [
-                    "Beautiful Trauma",
-                    "P!nk",
-                    "Pop",
-                    "RCA Records Label"
-                ],
-                "categoryId": "10",
-                "liveBroadcastContent": "none",
-                "localized": {
-                    "title": "P!nk - Beautiful Trauma (Official Video)",
-                    "description": "P!NK's new album 'Beautiful Trauma' featuring the singles “What About Us” and \"Beautiful Trauma\" is available now!\niTunes - http://smarturl.it/BeautifulTrauma/itunes?IQid=yt \nApple Music - http://smarturl.it/BeautifulTrauma/applemusic?IQid=yt \nSpotify - http://smarturl.it/BeautifulTrauma/spotify?IQid=yt \nAmazon - http://smarturl.it/BeautifulTrauma/amazon?IQid=yt \nGoogle Play - http://smarturl.it/BeautifulTrauma/googleplay?IQid=yt\n \nWatch the Official Video for “What About Us” - http://smarturl.it/WAU?IQid=yt\n \nConnect with P!NK:\nhttp://www.facebook.com/pink\nhttp://www.twitter.com/pink\nhttp://www.instagram.com/pink\nhttp://www.pinkspage.com"
-                }
-            },
-            "statistics": {
-                "viewCount": "4458842",
-                "likeCount": "233454",
-                "dislikeCount": "7708",
-                "favoriteCount": "0",
-                "commentCount": "16510"
-            }
-        },
-        {
-            "kind": "youtube#video",
             "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/zPucaWVMHr1DvJN_RYgnAuoUjus\"",
             "id": "cHB_s970Uyw",
             "snippet": {

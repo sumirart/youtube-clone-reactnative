@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-
+import { withNavigation } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-export default class VideoItem extends Component {
+class VideoItem extends Component {
     render(){
         const video = this.props.video;
+        const id = this.props.id;
         const dontShowTimes = this.props.dontShowTimes;
-
+        
         return(
-            <View style={{ marginBottom: 20, backgroundColor: "#FFF" }}>
+            <TouchableOpacity style={{ marginBottom: 20, backgroundColor: "#FFF" }} onPress={() => this.props.navigation.navigate('Video', { id: id, data: video })}>
                 <Image source={{ uri: video.snippet.thumbnails.standard.url }} style={{ height: 200 }} />
 
                 <View style={styles.container}>
@@ -42,10 +43,12 @@ export default class VideoItem extends Component {
 
                 </View>
 
-            </View>
+            </TouchableOpacity>
         )
     }
 }
+
+export default withNavigation(VideoItem);
 
 styles = StyleSheet.create({
     container: {

@@ -1,8 +1,9 @@
 // IMPORT LIBRARY
 import React, { Component } from "react";
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Animated } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator, createMaterialTopTabNavigator } from "react-navigation";
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import CustomIcon from './CustomIcon';
 
 
 // IMPORT BOTTOM TAB SCREENS
@@ -11,6 +12,13 @@ import Trending from './screens/Trending'
 import Subscriptions from './screens/Subscriptions'
 import Library from './screens/Library';
 
+
+// IMPORT STACK NIH CUYSZZZZZ
+import Profile from './screens/Profile';
+import Video from './components/Video';
+import Search from './screens/Search';
+
+
 // IMPORT TOP TAB SCREENS
 import MessagesTab from './screens/MessagesTab';
 import NotificationsTab from './screens/Notifications'
@@ -18,16 +26,6 @@ import NotificationsTab from './screens/Notifications'
 
 // IMPORT COMPONENTS 
 import Navbar from './components/NavBar';
-import ScrollInbox from './components/ScrollInbox';
-
-// COMPONENT FOR SCROLL INBOX
-export default class App extends Component {
-  render(){
-    return(
-      <Root style={{ backgroundColor: "#FFF" }} />
-    )
-  }
-}
 
 
 // ROUTE SETTINGS GOES HERE
@@ -39,7 +37,6 @@ const MaterialTopTabInbox = createMaterialTopTabNavigator({
   Notifications: NotificationsTab,
 },
 {
-  // initialRouteName: "Notifications",
   tabBarOptions: {
     activeTintColor: "#000",
     inactiveTintColor: "#606060",
@@ -53,50 +50,86 @@ const MaterialTopTabInbox = createMaterialTopTabNavigator({
   }
 });
 
+const StackHome = createStackNavigator({
+  Home: Home,
+  Video: Video,
+  Profile: Profile,
+  Search: Search
+}, {
+    headerMode: "none"
+});
+
+const StackTrending = createStackNavigator({
+  Trending: Trending,
+  Video: Video,
+  Profile: Profile,
+  Search: Search
+}, {
+    headerMode: "none"
+});
+
+const StackSubscriptions = createStackNavigator({
+  Subscriptions: Subscriptions,
+  Video: Video,
+  Profile: Profile,
+  Search: Search
+}, {
+    headerMode: "none"
+});
+
+const StackLibrary = createStackNavigator({
+  Library: Library,
+  Video: Video,
+  Profile: Profile,
+  Search: Search
+}, {
+  headerMode: "none"
+});
+
 const StackInbox = createStackNavigator({
   Index: {
     screen: MaterialTopTabInbox,
     navigationOptions: {
-      // headerMode: <Navbar />,
-      // headerTitle: <Navbar style />
       header: (
         <View style={{ height: 55 }}>
-          <ScrollView showsVerticalScrollIndicator={false}>
+          <ScrollView>
             <Navbar style={{ elevation: 0 }} />
           </ScrollView>
-        </View >
+        </View>
       )
     }
-  }
+  },
+  Profile: Profile,
+  Search: Search
 }
 );
 
 const RootBottomTab = createBottomTabNavigator(
   {
     Home: {
-      screen: Home,
+      screen: StackHome,
       navigationOptions: {
         tabBarLabel: 'Home',
         tabBarIcon: ( { tintColor } ) => (
-          <Icon name="home" size={25} color={tintColor} />
+          <Icon name="home" size={23} color={tintColor} />
         )
       }
     },
     Trending: {
-      screen: Trending,
+      screen: StackTrending,
       navigationOptions: {
         tabBarLabel: 'Trending',
         tabBarIcon: ( { tintColor } ) => (
-          <Icon name="whatshot" size={25} color={tintColor} />
+          <CustomIcon name="trending" size={27} color={tintColor} />
         )
       }
     },
     Subscriptions: {
-      screen: Subscriptions,
+      screen: StackSubscriptions,
       navigationOptions: {
         tabBarLabel: 'Subscriptions',
         tabBarIcon: ( { tintColor } ) => (
-          <Icon name="subscriptions" size={25} color={tintColor} />
+          <Icon name="subscriptions" size={22} color={tintColor} />
         )
       }
     },
@@ -105,22 +138,22 @@ const RootBottomTab = createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: 'Inbox',
         tabBarIcon: ({ tintColor }) => (
-          <Icon name="mail" size={25} color={tintColor} />
+          <Icon name="mail" size={22} color={tintColor} />
         )
       }
     },
     Library: {
-      screen: Library,
+      screen: StackLibrary,
       navigationOptions: {
         tabBarLabel: 'Library',
         tabBarIcon: ({ tintColor }) => (
-          <Icon name="folder" size={25} color={tintColor} />
+          <Icon name="folder" size={22} color={tintColor} />
         )
       }
     }
   },
   {
-    initialRouteName: "Library",
+    initialRouteName: "Home",
     backgroundColor: "#FFF",
     tabBarOptions: {
       activeTintColor: '#ff0000',
@@ -128,14 +161,15 @@ const RootBottomTab = createBottomTabNavigator(
       activeBackgroundColor: '#FFF',
       inactiveBackgroundColor: '#FFF',
       labelStyle: {
-        fontSize: 11
+        fontSize: 10,
+        paddingBottom: 5
       }
       
     }
   }
 )
 
-const Root = createStackNavigator({
+export default createStackNavigator({
   Root: RootBottomTab
 },
 {

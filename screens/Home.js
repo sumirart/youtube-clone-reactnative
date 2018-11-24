@@ -1,6 +1,6 @@
 //  IMPORT LIBRARY
 import React, { Component } from 'react';
-import { View, StyleSheet, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList, Text } from 'react-native';
 
 
 // IMPORT JSON
@@ -13,16 +13,23 @@ import VideoItem from '../components/VideoItem'
 
 
 export default class Home extends Component {
+constructor(props){
+super(props);
+this.state = {
+    data: data.items
+}
+}
+
     render() {
         return (
             <View style={styles.container}>
-                <NavBar />
+                <NavBar navigation={this.props.navigation} />
 
                 <View style={styles.body}>
                     <FlatList
-                        data={data.items}
+                        data={this.state.data}
                         renderItem={
-                            (video) => <VideoItem video={video.item} />
+                            (video) => <VideoItem video={video.item} id={video.item.id} />
                         }
                         keyExtractor={
                             (item) => item.id

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, ScrollView, Image, SafeAreaView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Image, SafeAreaView, TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 // IMPORT COMPONENT
@@ -17,7 +17,7 @@ export default class Library extends Component {
                         <Text style={{ color: "#202020", fontSize: 15, paddingLeft: 15 }}>Recent</Text>
 
                         <ScrollView contentContainerStyle={{ paddingLeft: 15, marginVertical: 15 }} showsHorizontalScrollIndicator={false} horizontal={true}>
-                            <View style={{ marginRight: 15, width: 145 }}>
+                            <TouchableOpacity style={{ marginRight: 15, width: 145 }} onPress={ () => this.props.navigation.navigate('TestScreen') }>
                                 <Image source={require('../src/photo.jpg')} style={{ height: 75, width: 145 }} />
 
                                 <View style={{ flexDirection: "row", justifyContent: "flex-start", marginTop: 5, justifyContent: "space-between" }}>
@@ -28,7 +28,7 @@ export default class Library extends Component {
 
                                     <Icon name="more-vert" size={19} color="#777476" style={{ marginLeft: 15, marginTop: 5 }} />
                                 </View>
-                            </View>
+                            </TouchableOpacity>
                             <View style={{ marginRight: 15, width: 145 }}>
                                 <Image source={require('../src/photo.jpg')} style={{ height: 75, width: 145 }} />
 
