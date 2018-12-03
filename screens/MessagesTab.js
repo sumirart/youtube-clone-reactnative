@@ -5,9 +5,9 @@ import AntDesignIcon from 'react-native-vector-icons/AntDesign';
 
 import { withNavigation } from 'react-navigation';
 
-class MessagesTab extends Component{
-    render(){
-        return(
+class MessagesTab extends Component {
+    render() {
+        return (
             <SafeAreaView style={{ flex: 1, backgroundColor: "#FFF" }}>
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View>
@@ -17,7 +17,7 @@ class MessagesTab extends Component{
                         </View>
 
                         <View style={inboxStyles.friends}>
-                            <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.friendsPhoto} />
+                            <Image source={require('../src/photo.jpg')} style={inboxStyles.friendsPhoto} />
                             <View>
                                 <Text style={{ fontSize: 15, color: "#202020" }}>[Blocked user]</Text>
                                 <Text style={{ marginBottom: 3, color: "#202020" }}>You're now connected!</Text>
@@ -35,7 +35,7 @@ class MessagesTab extends Component{
                             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingLeft: 15 }}>
 
                                 <View style={inboxStyles.suggestedItem}>
-                                    <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.suggestedImg} />
+                                    <Image source={require('../src/photo.jpg')} style={inboxStyles.suggestedImg} />
 
                                     <Text style={{ textAlign: "center", width: 60, color: "#202020" }} numberOfLines={1}>Paul</Text>
 
@@ -45,7 +45,7 @@ class MessagesTab extends Component{
                                 </View>
 
                                 <View style={inboxStyles.suggestedItem}>
-                                    <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.suggestedImg} />
+                                    <Image source={require('../src/photo.jpg')} style={inboxStyles.suggestedImg} />
 
                                     <Text style={{ textAlign: "center", width: 60, color: "#202020" }} numberOfLines={1}>Paul</Text>
 
@@ -55,7 +55,7 @@ class MessagesTab extends Component{
                                 </View>
 
                                 <View style={inboxStyles.suggestedItem}>
-                                    <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.suggestedImg} />
+                                    <Image source={require('../src/photo.jpg')} style={inboxStyles.suggestedImg} />
 
                                     <Text style={{ textAlign: "center", width: 60, color: "#202020" }} numberOfLines={1}>Paul</Text>
 
@@ -65,7 +65,7 @@ class MessagesTab extends Component{
                                 </View>
 
                                 <View style={inboxStyles.suggestedItem}>
-                                    <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.suggestedImg} />
+                                    <Image source={require('../src/photo.jpg')} style={inboxStyles.suggestedImg} />
 
                                     <Text style={{ textAlign: "center", width: 60, color: "#202020" }} numberOfLines={1}>Paul</Text>
 
@@ -75,7 +75,7 @@ class MessagesTab extends Component{
                                 </View>
 
                                 <View style={inboxStyles.suggestedItem}>
-                                    <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={inboxStyles.suggestedImg} />
+                                    <Image source={require('../src/photo.jpg')} style={inboxStyles.suggestedImg} />
 
                                     <Text style={{ textAlign: "center", width: 60, color: "#202020" }} numberOfLines={1}>Paul</Text>
 

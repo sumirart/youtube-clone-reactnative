@@ -4,40 +4,40 @@ import { withNavigation } from 'react-navigation';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 class VideoItem extends Component {
-    render(){
+    render() {
         const video = this.props.video;
         const id = this.props.id;
         const dontShowTimes = this.props.dontShowTimes;
-        
-        return(
+
+        return (
             <TouchableOpacity style={{ marginBottom: 20, backgroundColor: "#FFF" }} onPress={() => this.props.navigation.navigate('Video', { id: id, data: video })}>
                 <Image source={{ uri: video.snippet.thumbnails.standard.url }} style={{ height: 200 }} />
 
                 <View style={styles.container}>
 
                     <View style={styles.videoDesc}>
-                        <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 50, height: 50, borderRadius: 50 }} />
-                        
+                        <Image source={require('../src/photo.jpg')} style={{ width: 50, height: 50, borderRadius: 50 }} />
+
                         <View style={styles.detail}>
                             <Text numberOfLines={2} style={styles.videoTitle}>{video.snippet.title}</Text>
                             {
                                 dontShowTimes ?
-                                (
-                                    <Text style={styles.stats}>
-                                        {video.snippet.channelTitle + " · " + abbreviateNumber(video.statistics.viewCount) + " views "}
+                                    (
+                                        <Text style={styles.stats}>
+                                            {video.snippet.channelTitle + " · " + abbreviateNumber(video.statistics.viewCount) + " views "}
+                                        </Text>
+                                    )
+                                    :
+                                    (
+                                        <Text style={styles.stats}>
+                                            {video.snippet.channelTitle + " · " + abbreviateNumber(video.statistics.viewCount) + " views " + " · "} 5 months ago
                                     </Text>
-                                ) 
-                                : 
-                                (
-                                    <Text style={styles.stats}>
-                                        {video.snippet.channelTitle + " · " + abbreviateNumber(video.statistics.viewCount) + " views " + " · "} 5 months ago
-                                    </Text>
-                                 )
+                                    )
                             }
                         </View>
 
                         <TouchableOpacity>
-                            <Icon name="more-vert" size={20} color="#999999" style={{paddingTop: 10}} />
+                            <Icon name="more-vert" size={20} color="#999999" style={{ paddingTop: 10 }} />
                         </TouchableOpacity>
                     </View>
 

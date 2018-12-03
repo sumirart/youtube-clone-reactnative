@@ -6,102 +6,102 @@ export default NotificationsTab = () => (
     <SafeAreaView style={notifStyles.container}>
         <ScrollView style={notifStyles.SVContainer} showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 15 }} >
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={{ width: 60, height: 35, marginRight: 15 }} />
+                <Image source={require('../src/photo.jpg')} style={{ width: 60, height: 35, marginRight: 15 }} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
 
             <View style={notifStyles.itemContainer}>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.img} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.img} />
                 <View style={notifStyles.txtContainer}>
                     <Text numberOfLines={4} style={notifStyles.info} >Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages Long Messages </Text>
                     <Text style={notifStyles.time}>5 days ago</Text>
                 </View>
-                <Image source={{ uri: "https://randomuser.me/api/portraits/men/30.jpg" }} style={notifStyles.videoImg} />
+                <Image source={require('../src/photo.jpg')} style={notifStyles.videoImg} />
                 <Icon name="more-vert" size={16} color="#777476" style={{ marginTop: 10 }} />
             </View>
         </ScrollView>
@@ -126,7 +126,7 @@ const notifStyles = StyleSheet.create({
         alignItems: "flex-start",
         marginBottom: 15
     },
-    
+
     img: {
         width: 35,
         height: 35,
